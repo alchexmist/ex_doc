@@ -1,0 +1,20 @@
+#, elixir-format
+#: lib/ex_doc/formatter/html/templates/sidebar_template.eex:50
+msgid "Exceptions"
+msgstr "Excepciones"
+
+#, elixir-format
+#: lib/ex_doc/formatter/html/templates/sidebar_template.eex:54
+msgid "Mix Tasks"
+msgstr "Tareas de Mix"
+
+#, elixir-format
+#: lib/ex_doc/formatter/html/templates/sidebar_template.eex:46
+msgid "Modules"
+msgstr "Módulos"
+
+#, elixir-format
+#: lib/ex_doc/formatter/html/templates/sidebar_template.eex:43
+msgid "Pages"
+msgstr "Páginas"
+

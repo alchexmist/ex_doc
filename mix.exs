@@ -17,7 +17,8 @@ defmodule ExDoc.Mixfile do
       preferred_cli_env: [coveralls: :test],
       description: "ExDoc is a documentation generation tool for Elixir",
       xref: [exclude: [Cmark]],
-      docs: docs()
+      docs: docs(),
+      compilers: [:gettext] ++ Mix.compilers()
     ]
   end
 
@@ -29,6 +30,7 @@ defmodule ExDoc.Mixfile do
     [
       {:earmark, "~> 1.3"},
       {:makeup_elixir, "~> 0.10"},
+      {:gettext, "~> 0.16.1"},
       {:cmark, "~> 0.5", only: :test},
       {:excoveralls, "~> 0.3", only: :test}
     ]

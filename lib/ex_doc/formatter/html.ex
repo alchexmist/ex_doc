@@ -3,7 +3,7 @@ defmodule ExDoc.Formatter.HTML do
 
   alias __MODULE__.{Assets, Autolink, Templates, SearchItems}
   alias ExDoc.{Markdown, GroupMatcher}
-
+  
   @main "api-reference"
   @assets_dir "assets"
 
@@ -12,6 +12,9 @@ defmodule ExDoc.Formatter.HTML do
   """
   @spec run(list, ExDoc.Config.t()) :: String.t()
   def run(project_nodes, config) when is_map(config) do
+
+    Gettext.put_locale(ExDoc.Gettext, "es_ES")
+
     config = normalize_config(config)
     config = %{config | output: Path.expand(config.output)}
 

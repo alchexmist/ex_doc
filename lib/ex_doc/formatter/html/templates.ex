@@ -1,7 +1,8 @@
 defmodule ExDoc.Formatter.HTML.Templates do
   @moduledoc false
   require EEx
-
+  require ExDoc.Gettext
+  
   alias ExDoc.Formatter.HTML
 
   @doc """
