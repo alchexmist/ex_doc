@@ -8,13 +8,13 @@
   <div class="detail-header">
     <a href="#<%=enc_h HTML.link_id(node) %>" class="detail-link" title="Link to this <%= pretty_type(node) %>">
       <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this <%= pretty_type(node) %></span>
+      <span class="sr-only"><%= translate(config, "Link to this") %><%= pretty_type(node) %></span>
     </a>
     <h1 class="signature"><%=h node.signature %></h1>
     <%= if node.source_url do %>
       <a href="<%= node.source_url %>" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
+       <span class="sr-only"><%= translate(config, "View Source") %></span>
      </a>
     <% end %>
     <%= for annotation <- node.annotations do %>

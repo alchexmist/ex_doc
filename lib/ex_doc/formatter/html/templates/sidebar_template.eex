@@ -40,18 +40,18 @@
   </div>
 
   <ul class="sidebar-listNav">
-    <li><a id="extras-list" href="#full-list"><%= config.extra_section || "Pages" %></a></li>
+    <li><a id="extras-list" href="#full-list"><%= config.extra_section || translate(config, "Pages") %></a></li>
 
     <%= if nodes_map.modules != [] do %>
-      <li><a id="modules-list" href="#full-list">Modules</a></li>
+      <li><a id="modules-list" href="#full-list"><%= translate(config, "Modules") %></a></li>
     <% end %>
 
     <%= if nodes_map.exceptions != [] do %>
-      <li><a id="exceptions-list" href="#full-list">Exceptions</a></li>
+      <li><a id="exceptions-list" href="#full-list"><%= translate(config, "Exceptions") %></a></li>
     <% end %>
 
     <%= if nodes_map.tasks != [] do %>
-      <li><a id="tasks-list" href="#full-list">Mix Tasks</a></li>
+      <li><a id="tasks-list" href="#full-list"><%= translate(config, "Mix Tasks") %></a></li>
     <% end %>
   </ul>
   <div class="gradient"></div>
