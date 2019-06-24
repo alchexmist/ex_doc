@@ -1,7 +1,7 @@
 <%= head_template(config, %{title: "Search", type: :search}) %>
 <%= sidebar_template(config, nodes_map) %>
 <div id="search">
-  <h1><%= translate(config, "Search") %></h1>
+  <h1><%= translate(config.language, "Search") %></h1>
   <div class="loading"><div></div><div></div><div></div><div></div></div>
 </div>
 <%= footer_template(config) %>

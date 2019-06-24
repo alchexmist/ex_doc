@@ -1,20 +1,20 @@
       <footer class="footer">
         <p>
           <span class="line">
-            <%= translate(config, "Built using") %>
+            <%= translate(config.language, "Built using") %>
             <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v<%= ExDoc.version %>),
           </span>
           <span class="line">
-            <%= translate(config, "designed by") %>
+            <%= translate(config.language, "designed by") %>
             <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
           </span>
         </p>
         <p>
           <button class="line footer-button night-mode-toggle">
-            <%= translate(config, "Toggle night mode") %>
+            <%= translate(config.language, "Toggle night mode") %>
           </button>
           <button class="line footer-button display-shortcuts-help">
-            <%= translate(config, "Display keyboard shortcuts") %>
+            <%= translate(config.language, "Display keyboard shortcuts") %>
           </button>
         </p>
       </footer>

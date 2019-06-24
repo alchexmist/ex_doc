@@ -5,6 +5,7 @@ defmodule ExDoc.Formatter.EPUB.Templates do
 
   alias ExDoc.Formatter.HTML
   alias ExDoc.Formatter.HTML.Templates, as: H
+  import ExDoc.Translations
 
   @doc """
   Generate content from the module template for a given `node`

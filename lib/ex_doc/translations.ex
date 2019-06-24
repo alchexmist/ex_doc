@@ -1,9 +1,11 @@
 defmodule ExDoc.Translations do
 
   @locale_spanish_international "es"
-  @locale_spanish_spain "es-ES"
-  @locale_galician_spain "gl-ES"
+  @locale_spanish_spain "es_ES"
+  @locale_galician_spain "gl_ES"
 
+  def translate(@locale_spanish_international, text) when is_atom(text), do: translate(@locale_spanish_international, Atom.to_string(text))
+  def translate(@locale_spanish_international, "Callbacks"), do: "Devolución de llamadas"
   def translate(@locale_spanish_international, "API Reference"), do: "Referencia de la API"
   def translate(@locale_spanish_international, "Built using"), do: "Construido usando"
   def translate(@locale_spanish_international, "Cancel search"), do: "Cancelar búsqueda"
@@ -101,6 +103,8 @@ defmodule ExDoc.Translations do
 # "o utilizar nuestra página <a href="api-reference.html">Referencia de la API</a>"
 # "para encontrar lo que buscas."
 
+  def translate(@locale_spanish_spain, text) when is_atom(text), do: translate(@locale_spanish_international, Atom.to_string(text))
+  def translate(@locale_spanish_spain, "Callbacks"), do: "Devolución de llamadas"
   def translate(@locale_spanish_spain, "API Reference"), do: "Referencia de la API"
   def translate(@locale_spanish_spain, "Built using"), do: "Construido usando"
   def translate(@locale_spanish_spain, "Cancel search"), do: "Cancelar búsqueda"
@@ -199,6 +203,8 @@ defmodule ExDoc.Translations do
 # "para encontrar lo que buscas."
 
 
+  def translate(@locale_galician_spain, text) when is_atom(text), do: translate(@locale_spanish_international, Atom.to_string(text))
+  def translate(@locale_galician_spain, "Callbacks"), do: "Devolución de llamadas"
   def translate(@locale_galician_spain, "API Reference"), do: "Referencia da API"
   def translate(@locale_galician_spain, "Built using"), do: "Construído empregando"
   def translate(@locale_galician_spain, "Cancel search"), do: "Cancelar busca"

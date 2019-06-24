@@ -2,7 +2,7 @@
   <div class="summary-signature">
     <a href="<%=enc_h module_node.id %>.html"><%=h module_node.title %></a>
     <%= if deprecated = module_node.deprecated do %>
-      <span class="deprecated" title="<%= h(deprecated) %>"><%= translate(config, "deprecated") %></span>
+      <span class="deprecated" title="<%= h(deprecated) %>"><%= translate(config.language, "deprecated") %></span>
     <% end %>
   </div>
   <%= if doc = module_node.rendered_doc do %>
